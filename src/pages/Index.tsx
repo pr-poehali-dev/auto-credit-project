@@ -35,8 +35,7 @@ const Index = () => {
       model: "Camry",
       year: 2024,
       price: 2890000,
-      image:
-        "https://via.placeholder.com/400x250/2563EB/ffffff?text=Toyota+Camry",
+      image: "/img/f47403f3-70cc-487c-a8e3-a4eaada55f23.jpg",
       fuel: "Бензин",
       transmission: "Автомат",
       engine: "2.5L",
@@ -49,7 +48,7 @@ const Index = () => {
       model: "X5",
       year: 2024,
       price: 6450000,
-      image: "https://via.placeholder.com/400x250/2563EB/ffffff?text=BMW+X5",
+      image: "/img/0367991c-8361-41a9-84e2-4bffb370858f.jpg",
       fuel: "Бензин",
       transmission: "Автомат",
       engine: "3.0L",
@@ -62,7 +61,7 @@ const Index = () => {
       model: "A4",
       year: 2024,
       price: 4290000,
-      image: "https://via.placeholder.com/400x250/2563EB/ffffff?text=Audi+A4",
+      image: "/img/02447c42-cdb2-4288-b164-728b13d122aa.jpg",
       fuel: "Бензин",
       transmission: "Автомат",
       engine: "2.0L",
@@ -75,41 +74,12 @@ const Index = () => {
       model: "E-Class",
       year: 2024,
       price: 5890000,
-      image:
-        "https://via.placeholder.com/400x250/2563EB/ffffff?text=Mercedes+E-Class",
+      image: "/img/0d6ac925-c192-4ee4-ae68-5d766c7ffe72.jpg",
       fuel: "Бензин",
       transmission: "Автомат",
       engine: "2.0L",
       creditPrice: 50700,
       tradeDiscount: 295000,
-    },
-    {
-      id: 5,
-      brand: "Hyundai",
-      model: "Tucson",
-      year: 2024,
-      price: 3190000,
-      image:
-        "https://via.placeholder.com/400x250/2563EB/ffffff?text=Hyundai+Tucson",
-      fuel: "Бензин",
-      transmission: "Автомат",
-      engine: "2.0L",
-      creditPrice: 27400,
-      tradeDiscount: 160000,
-    },
-    {
-      id: 6,
-      brand: "Mazda",
-      model: "CX-5",
-      year: 2024,
-      price: 3690000,
-      image:
-        "https://via.placeholder.com/400x250/2563EB/ffffff?text=Mazda+CX-5",
-      fuel: "Бензин",
-      transmission: "Автомат",
-      engine: "2.5L",
-      creditPrice: 31700,
-      tradeDiscount: 185000,
     },
   ];
 
@@ -380,7 +350,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {filteredCars.map((car) => (
               <Card
                 key={car.id}
